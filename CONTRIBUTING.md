@@ -60,7 +60,7 @@ does not extract ZIP archives, validate schemas, verify provenance or establish
 research validity, governance adequacy or production readiness. Passing CI does
 not by itself prove that original papers or sealed material were preserved.
 
-See the [repository checks documentation](.github/README.md) for local commands
+See the [repository checks documentation](.github/CHECKS.md) for local commands
 and implementation details. Local checking is optional before pushing; GitHub's
 required checks must still pass. Stage intended new files before local checks,
 because only Git-tracked paths are examined. GitHub may require maintainer
