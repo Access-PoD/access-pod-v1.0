@@ -91,6 +91,21 @@ class ReadmeLinksTests(unittest.TestCase):
         failures, *_ = check(self.root)
         self.assertEqual(failures, ["README.md: root README is missing or untracked"])
 
+    def test_symlink_to_outside_repository_fails_without_fragment(self):
+        with tempfile.TemporaryDirectory() as outside:
+            target = Path(outside) / "paper.pdf"
+            target.write_text("fixture only", encoding="utf-8")
+            try:
+                (self.root / "paper.pdf").symlink_to(target)
+            except (OSError, NotImplementedError):
+                self.skipTest("symlink creation is unavailable on this system")
+            subprocess.run(["git", "-C", str(self.root), "add", "--", "paper.pdf"], check=True,
+                           capture_output=True)
+            self.file("README.md", "[paper](paper.pdf)")
+            failures, *_ = check(self.root)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("resolves outside the repository", failures[0])
+
 
 if __name__ == "__main__":
     unittest.main()

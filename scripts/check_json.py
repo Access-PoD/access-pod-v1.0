@@ -75,6 +75,8 @@ def main(argv: list[str] | None = None) -> int:
     failures = 0
     for name in paths:
         try:
+            if not (root / name).resolve().is_relative_to(root):
+                raise ValueError("JSON path resolves outside the repository")
             check_file(root / name)
         except (OSError, ValueError, RecursionError) as error:
             failures += 1

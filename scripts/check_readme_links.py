@@ -141,6 +141,8 @@ def check(root):
                     raise ValueError("link escapes the repository")
                 if resolved not in files and resolved not in directories:
                     raise ValueError("target is missing, untracked or has different letter case")
+                if not (root / resolved).resolve().is_relative_to(root.resolve()):
+                    raise ValueError("target resolves outside the repository")
                 if path.endswith("/") and resolved not in directories:
                     raise ValueError("link treats a file as a directory")
                 fragment = unquote(url.fragment)

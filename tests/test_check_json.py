@@ -100,6 +100,20 @@ class JsonCheckTests(unittest.TestCase):
         self.assertEqual(result.returncode, 1)
         self.assertIn("no tracked JSON files found", result.stderr)
 
+    def test_symlink_to_outside_repository_fails(self):
+        with tempfile.TemporaryDirectory() as outside:
+            target = Path(outside) / "record.json"
+            target.write_text("{}", encoding="utf-8")
+            try:
+                (self.root / "record.json").symlink_to(target)
+            except (OSError, NotImplementedError):
+                self.skipTest("symlink creation is unavailable on this system")
+            subprocess.run(["git", "-C", str(self.root), "add", "--", "record.json"], check=True,
+                           capture_output=True)
+            result = self.check()
+            self.assertEqual(result.returncode, 1)
+            self.assertIn("resolves outside the repository", result.stderr)
+
 
 if __name__ == "__main__":
     unittest.main()
