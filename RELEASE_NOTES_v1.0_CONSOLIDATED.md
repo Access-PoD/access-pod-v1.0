@@ -67,3 +67,15 @@ These releases remain outside this selected distribution. They are references fo
 Version-specific evidence should remain attached to its own release. The ID2 comparisons in this collection do not establish Q-Pathformer platform results or equivalence between the v1.0 and v2.0 research packages.
 
 This edition supports public research and review. It does not confer certification, compliance, deployment authority or production readiness.
+
+## Supplementary reader and reviewer guide
+
+Added 11 October 2026: [Access PoD v1.0: Reader and Reviewer Guide — revised draft](<Access PoD v1.0 Reader and Reviewer Guide - revised draft.pdf>).
+
+**APOD-GUIDE-001 · v0.1 · Draft for Review · Informative** — a companion for orientation, reading, research prompts and feedback on the consolidated collection.
+
+[Download the PDF release asset](https://github.com/Access-PoD/access-pod-v1.0/releases/download/v1.0-consolidated/Access-PoD-v1.0-Reader-and-Reviewer-Guide-revised-draft.pdf) from the published [v1.0-consolidated Public Review Draft](https://github.com/Access-PoD/access-pod-v1.0/releases/tag/v1.0-consolidated).
+
+The guide is an **unsealed supplementary PDF**. It and these later documentation additions are outside the original curated ZIP and its collection manifest, checksum and seal receipt. The existing sealed assets and release tag remain unchanged.
+
+The preparation and sealing descriptions above record the original snapshot; this dated note records the later supplementary publication.

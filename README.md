@@ -134,3 +134,13 @@ Developed by **Alnotrea Labs**, through the **Policy of Developments / Access Po
 Feedback is welcome on clarity, navigation, example interpretation and reproducibility. When reporting an issue or proposing a change, identify the component, file, version and the behaviour or wording being discussed. For research references, cite the relevant paper's author, document ID and version, and identify the collection edition used.
 
 [Access PoD organisation](https://github.com/Access-PoD) · [Original source releases](https://github.com/Access-PoD/access-pod-artifacts-core/releases)
+
+## Supplementary reader and reviewer guide
+
+Added 11 October 2026: [Access PoD v1.0: Reader and Reviewer Guide — revised draft](<Access PoD v1.0 Reader and Reviewer Guide - revised draft.pdf>).
+
+**APOD-GUIDE-001 · v0.1 · Draft for Review · Informative** — a companion for orientation, reading, research prompts and feedback on the consolidated collection.
+
+[Download the PDF release asset](https://github.com/Access-PoD/access-pod-v1.0/releases/download/v1.0-consolidated/Access-PoD-v1.0-Reader-and-Reviewer-Guide-revised-draft.pdf) from the published [v1.0-consolidated Public Review Draft](https://github.com/Access-PoD/access-pod-v1.0/releases/tag/v1.0-consolidated).
+
+The guide is an **unsealed supplementary PDF**. It and these later documentation additions are outside the original curated ZIP and its collection manifest, checksum and seal receipt. The existing sealed assets and release tag remain unchanged.
