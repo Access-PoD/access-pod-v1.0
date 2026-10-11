@@ -12,7 +12,15 @@ The collection includes research papers, Markdown modules, worked examples, JSON
 
 This consolidated edition adds shared navigation, current reading guidance and documented additions, including an **ID2 four-candidate example alongside the original two-candidate example**. Each component retains its original publication identity and version.
 
-[Start here](#start-here) · [Collection map](#collection-map) · [Research papers](#research-papers-and-artifacts) · [ID2 examples](#id2-examples-2-and-4-candidates) · [Getting started](#getting-started) · [Licence](#licence)
+[Published release](#published-release) · [Start here](#start-here) · [Collection map](#collection-map) · [Research papers](#research-papers-and-artifacts) · [ID2 examples](#id2-examples-2-and-4-candidates) · [Getting started](#getting-started) · [Licence](#licence)
+
+## Published release
+
+**[Download v1.0-consolidated — Public Review Draft](https://github.com/Access-PoD/access-pod-v1.0/releases/tag/v1.0-consolidated)**
+
+Access PoD v1.0 is published as a **Public Review Draft** of the consolidated collection. The **pre-release** label signals that its methods and implementation examples remain under review and may be refined in future editions. This edition does not claim production readiness.
+
+The materials are publicly available for download, citation and research. The label does not alter the sealed files or their verified checksums. A future edition may become a regular release once its defined scope is considered stable and review feedback has been addressed.
 
 ## Start here
 
@@ -106,7 +114,7 @@ Read the [ID2 guidance](v1.0-access-mode/ID_2-Access/MIGRATION_NOTES.md) or [ID3
 Collection v1.0 brings the selected releases together while preserving their original version identifiers. The [collection release notes](RELEASE_NOTES_v1.0_CONSOLIDATED.md) describe the common navigation, current guides and documented additions, including the separately supplied Version B paper and the four-candidate ID2 example.
 
 - [Source and provenance records](provenance/) identify the original archives, imports and recorded corrections.
-- [Collection manifest](collection-manifest.json) inventories this edition's files, excluding the manifest itself.
+- [Sealed collection manifest](https://github.com/Access-PoD/access-pod-v1.0/blob/2abbb303d8eb248bf451e6829a5a82eb55cf6ccd/collection-manifest.json) inventories the `v1.0-consolidated` release files, excluding the manifest itself. This repository README includes later publication and navigation updates; the sealed snapshot remains unchanged.
 - Component errata and migration notes provide current reading guidance alongside preserved historical material.
 
 Dated records describe checks performed in their stated context. The research materials support learning, standards exploration and technical review; they do not themselves confer certification, legal compliance or deployment approval.
